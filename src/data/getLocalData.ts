@@ -6,7 +6,7 @@ const path = require("path");
 
 const LOCAL_DATA_STORAGE = process.env.LOCAL_DATA_STORAGE;
 const filePath = path.join(__dirname, LOCAL_DATA_STORAGE);
-
+//test
 if (!LOCAL_DATA_STORAGE) {
   throw new Error(
     "LOCAL_DATA_STORAGE is not defined in environment variables."
