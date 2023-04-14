@@ -2,11 +2,7 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 dotenv.config();
 
-<<<<<<< HEAD
 const MONGO_URI = process.env.MONGO_URI_DEV;
-=======
-const MONGO_URI = process.env.MONGO_URI;
->>>>>>> 8f252b7d659a6ba11d475fddeac06f0a969668e8
 
 export const connectDB = async () => {
   if (!MONGO_URI) {

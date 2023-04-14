@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 export interface heartRateDataSamplePoints {
-=======
-export interface samplePoint {
->>>>>>> 8f252b7d659a6ba11d475fddeac06f0a969668e8
   unit: string;
   startTime: number;
   endTime: number;
@@ -10,7 +6,6 @@ export interface samplePoint {
   key: string;
 }
 
-<<<<<<< HEAD
 export interface heartRateDataPoint {
   startTime: number;
   samplePoints: Array<heartRateDataSamplePoints>;
@@ -30,10 +25,5 @@ export interface sleepDataPoint {
 }
 
 export interface hasHealthTypeCode {
-=======
-export interface hasHealthTypeCode {
-  startTime: number;
-  samplePoints: Array<samplePoint>;
->>>>>>> 8f252b7d659a6ba11d475fddeac06f0a969668e8
   type: number;
 }
