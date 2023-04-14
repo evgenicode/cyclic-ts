@@ -2,8 +2,10 @@ import fs from "fs";
 import { hasHealthTypeCode } from "../interfaces/interfaces";
 import { heartRateFilter } from "../filters/heartRateFilter";
 import { sleepDataFilter } from "../filters/sleepDataFilter";
+const path = require("path");
 
 const LOCAL_DATA_STORAGE = process.env.LOCAL_DATA_STORAGE;
+const filePath = path.join(__dirname, LOCAL_DATA_STORAGE);
 
 if (!LOCAL_DATA_STORAGE) {
   throw new Error(
@@ -11,7 +13,7 @@ if (!LOCAL_DATA_STORAGE) {
   );
 }
 
-export const data = JSON.parse(fs.readFileSync(LOCAL_DATA_STORAGE, "utf-8"));
+export const data = JSON.parse(fs.readFileSync(filePath, "utf-8"));
 
 export const heartRateData = data.filter(
   (item: hasHealthTypeCode) => item.type === 7
