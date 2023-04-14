@@ -7,9 +7,13 @@
 /dist
 
 /.env
+<<<<<<< HEAD
 /src/data/healthDetailData.json
 /src/data/healthDetailData2.json
 /src/data/healthDetailData3.json
+=======
+
+>>>>>>> 8f252b7d659a6ba11d475fddeac06f0a969668e8
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 package-lock.json
